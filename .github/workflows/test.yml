@@ -2,15 +2,15 @@ name: CI-Echo
 on:
  push:
  branches:
-  - develop
+  - main
 jobs:
  test:
  runs-on: ubuntu-latest
  steps:
  - uses: actions/checkout@v2
  - name: Run a one-line script
- run: echo the changes.
+ run: echo "the changes."
  - name: Run a multi-line script
  run: |
- echo Add other actions to build,
- echo deploy my project.
+ echo "Add other actions to build,"
+ echo "deploy my project."
