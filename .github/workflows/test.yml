@@ -1,7 +1,8 @@
 name: CI-Echo
 on:
  push:
- branches: [ develop ]
+ branches:
+  - develop
 jobs:
  test:
  runs-on: ubuntu-latest
